@@ -2,7 +2,7 @@ package basepatterns.creational.abstractfactory;
 
 import basepatterns.creational.abstractfactory.coffeeshop.CoffeeShopTeamFactory;
 
-public class CoffeShopMain {
+public class CoffeeShopMain {
     public static void main(String[] args) {
         ShopTeamFactory shopTeamFactory = new CoffeeShopTeamFactory();
         Seller seller = shopTeamFactory.getSeller();
