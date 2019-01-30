@@ -17,9 +17,8 @@ In **Factory pattern**, we create object `without exposing the creation logic to
     
   * ***Step 6:*** for improving this line of code: `TeacherFactory teacherFactory = new` `SomeTeacherFactory();`
     * create static method `static private TeacherFactory createTeacherFactoryBySpecialty(String specialty) ` 
-    * and then change this line in the following way:`TeacherFactory teacherFactory1 = 
-    createTeacherFactoryBySpecialty("some spesialty"*);`
-        *  *here some spesialty = "chemistry" or "math" 
+    * and then change this line in the following way:
+        * `TeacherFactory teacherFactory = createTeacherFactoryBySpecialty("some spesialty"*);`//here some spesialty = "chemistry" or "math" 
  
  
  
