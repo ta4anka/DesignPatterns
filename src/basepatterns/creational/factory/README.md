@@ -5,10 +5,10 @@ In **Factory pattern**, we create object `without exposing the creation logic to
   * ***Step 2:*** create concrete classes implementing the same interface:
     * MathTeacher
     * ChemistryTeacher
-  * ***Step 3:*** create the interface TeacherFactory with method `Teacher createTeacher();
+  * ***Step 3:*** create the interface TeacherFactory with method `Teacher createTeacher();`
   * ***Step 4:*** create concrete classes implementing the same interface:
-    * MathTeacherFactory, with _returns new MathTeacher();_
-    * ChemistryTeacherFactory, with _returns new ChemistryTeacher;_
+    * MathTeacherFactory, which  _returns new MathTeacher();_
+    * ChemistryTeacherFactory, which  _returns new ChemistryTeacher;_
   * ***Step 5:*** in ClientAppRunner create the concrete factory:
     * `TeacherFactory teacherFactory = new` `SomeTeacherFactory();` // here Some = Math or Chemistry
 
@@ -16,10 +16,10 @@ In **Factory pattern**, we create object `without exposing the creation logic to
     * `teacher.teach();`
     
   * ***Step 6:*** for improving this line of code: `TeacherFactory teacherFactory = new` `SomeTeacherFactory();`
-  create static method `static private TeacherFactory createTeacherFactoryBySpecialty(String specialty) ` and then 
-  change this line in the following way:
-    `* TeacherFactory teacherFactory1 = createTeacherFactoryBySpecialty("some spesialty");`// here some spesialty
-      = "chemistry" or "math" 
+    * create static method `static private TeacherFactory createTeacherFactoryBySpecialty(String specialty) ` 
+    * and then change this line in the following way:`TeacherFactory teacherFactory1 = 
+    createTeacherFactoryBySpecialty("some spesialty"*);`
+        *  *here some spesialty = "chemistry" or "math" 
  
  
  
