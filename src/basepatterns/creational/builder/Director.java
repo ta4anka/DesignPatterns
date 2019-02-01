@@ -9,12 +9,15 @@ public class Director {
 
     House buildHouse(){
         houseBuilder.createHouse();
+
         houseBuilder.buildTypeOfWall();
         houseBuilder.buildNumberOfRooms();
         houseBuilder.buildNumberOfFloors();
+        houseBuilder.buildPrice();
         houseBuilder.buildNumberOfWindows();
         houseBuilder.buildSwimmingPool();
         houseBuilder.buildGarden();
-        return houseBuilder.getHouse();
+
+        return houseBuilder.getHouse(); // house
     }
 }
