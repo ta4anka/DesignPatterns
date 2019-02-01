@@ -15,4 +15,6 @@ and fill all the field of our house by using setters.
 
  *  ***Step 4:*** create class Director, which will be "tell" to Builder what to do.
  
-*  ***Step 5:*** create class BuildHouseRunner, in which we can build any type of house.                 
+*  ***Step 5:*** create class BuildHouseRunner, in which we can build any type of house.
+
+**For a better understanding of the implementation, see "SimpleExampleOfBuilder.java"**              
