@@ -3,15 +3,18 @@ package basepatterns.structural.decorator;
 
 public class DecoratorApp {
     public static void main(String[] args) {
+        //without decorator:
         PrinterInterface printer = new Printer("Hello,Java!"); // Hello,Java!
         printer.print();
 
+        //with one decorator:
         PrinterInterface printerWithQuote = new QuoteDecorator(new Printer("Hello,Java!")); // "Hello,Java!"
         printerWithQuote.print();
 
         PrinterInterface printerWithBracket = new BracketDecorator(new Printer("Hello,Java!")); // {Hello,Java!}
         printerWithBracket.print();
 
+        //with two decorator:
         PrinterInterface printerWithTwoDecorators =
                 new BracketDecorator(
                 new QuoteDecorator(
@@ -21,12 +24,12 @@ public class DecoratorApp {
 
 }
 
-//-Step 1 :Create an interface. --------------------------------------------------
+//-Step 1----:Create an interface. --------------------------------------------------
 interface PrinterInterface { // Component
     void print();
 }
 
-//-Step 2:  Create concrete classes implementing the same interface----------------
+//-Step 2:----Create concrete classes implementing the same interface----------------
 class Printer implements PrinterInterface{ // Concrete Component
     String value;
 
@@ -47,11 +50,9 @@ abstract class Decorator implements PrinterInterface{
     public Decorator(PrinterInterface printerInterface) {
         this.printerInterface = printerInterface;
     }
-
-
 }
 
-//-Step 4:  create concrete decorator---and add new functionality----------------------------
+//-Step 4:----create concrete decorator---and add new functionality----------------------------
 
 class QuoteDecorator extends Decorator{
     public QuoteDecorator(PrinterInterface printerInterface) {
@@ -64,7 +65,7 @@ class QuoteDecorator extends Decorator{
     }
 }
 
-//-Step 5:  create another concrete decorator---and add new functionality--------------------
+//-Step 5:----create another concrete decorator---and add new functionality--------------------
 
 class BracketDecorator extends Decorator{
 
