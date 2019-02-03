@@ -43,13 +43,17 @@ class Printer implements PrinterInterface{ // Concrete Component
 }
 
 
-//-Step 3:----Create abstract decorator class implementing the PrinterInterface interface----
+//-Step 3:----Create abstract decorator class implementing the PrinterInterface ---------------
 abstract class Decorator implements PrinterInterface{
     PrinterInterface printerInterface; // component
 
     public Decorator(PrinterInterface printerInterface) {
         this.printerInterface = printerInterface;
     }
+    @Override
+    public void print() {
+        printerInterface.print();
+        }
 }
 
 //-Step 4:----create concrete decorator---and add new functionality----------------------------
@@ -60,7 +64,7 @@ class QuoteDecorator extends Decorator{
     }
     public void print() {
         System.out.print("\""); //new functionality
-        printerInterface.print();
+        super.print();
         System.out.print("\""); //new functionality
     }
 }
@@ -75,7 +79,7 @@ class BracketDecorator extends Decorator{
 
     public void print() {
         System.out.print('{'); //new functionality
-        printerInterface.print();
+        super.print();
         System.out.print('}'); //new functionality
     }
 }
