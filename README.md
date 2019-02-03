@@ -6,6 +6,6 @@ Useful links about Design Patterns:
 * [Link 4](https://www.youtube.com/playlist?list=PLwcDaxeEINactCC4mly7RQon5juIpH-Q3)
 
 
-####Design Patterns Quick Reference Cards
+ **Design Patterns Quick Reference Cards**
 ![pic 1](pic/designpatterns1.jpg)
 ![pic 2](pic/designpatterns2.jpg)
