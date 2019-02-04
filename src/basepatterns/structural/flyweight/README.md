@@ -7,4 +7,4 @@ This means that they cannot be modified once they have been constructed.
 You just reuse the same once created instance.
 
 
-![pic](https://www.growingwiththeweb.com/images/2014/02/17/flyweight-uml.svg)
+![pic](https://javapapers.com/wp-content/uploads/2012/06/flyweightuml.png)
