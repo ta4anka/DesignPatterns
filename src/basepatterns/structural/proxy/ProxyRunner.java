@@ -1,6 +1,6 @@
 package basepatterns.structural.proxy;
 
-//an example of virtual proxy
+//an example
 
 public class ProxyRunner{
 
