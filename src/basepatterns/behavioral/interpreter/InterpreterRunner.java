@@ -15,7 +15,7 @@ public class InterpreterRunner {
 interface Expression{
     int interpret();
 }
-//-----------Terminal Expression-----------------------------------------------
+//-----------Terminal Expression------------------------------
 class NumberExpression implements Expression{
     int number;
     public NumberExpression(int number) {
@@ -25,7 +25,7 @@ class NumberExpression implements Expression{
         return number;
     }
 }
-//----------------Nonterminal Expression------------------------------------------
+//----------------Nonterminal Expression--------------------------
 class MinusExpression implements Expression{
     Expression left;
     Expression right;
